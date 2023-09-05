@@ -33,6 +33,24 @@ public class Lezione_03_Math {
 		int numRandom2 = (int)(Math.random() * 10) + 1; //Da 1 a 10
 		System.out.println(numRandom2);
 		
+		
+		//Esercizio
+		/*
+		 * Chiedere di inserire un numero da tastiera e restituire la radice quadrata
+		 * 
+		 * es: 
+		 * Inserisci un numero: 9
+		 * La radice quadrata del numero è: 3 
+		 */
+		
+		//Esercizio 2
+		/*
+		 * Chiedere altri 2 numeri e restituire il numero con il valore massimo
+		 * 
+		 * Inserisci il primo numero: 7
+		 * Inserisci il secondo numero: 9
+		 * Il numero maggiore inserito è: 9
+		 */
 
 	}
 
