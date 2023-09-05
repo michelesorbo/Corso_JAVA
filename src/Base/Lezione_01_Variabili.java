@@ -1,5 +1,7 @@
 package Base;
 
+import java.util.Scanner;
+
 public class Lezione_01_Variabili {
 
 	public static void main(String[] args) {
@@ -73,7 +75,67 @@ public class Lezione_01_Variabili {
 		float milleFloat = 1000.0f;
 		System.out.println(milleFloat);
 		
+		String cognome;
+		
+		//Vado a dichiarare un oggetto di tipo Scanner Input per poter acquisire informazioni da tastiera
+		Scanner input = new Scanner(System.in);
+		
+		//Esempio di informazione presa da tastiera
+		System.out.println("Inserisi il tuo congnome");
+		cognome = input.nextLine(); //Vado a prendere i valori inseriti da tatiera
+		System.out.println("Il congome inserito è: " + cognome);
+		
+		System.out.println("Inserisci il tuo numero preferito");
+		int numero_preferito = input.nextInt(); //Vado a prendere un numero intero dalla tastiera
+		
+		System.out.println("Il tuo numero preferito è: " + numero_preferito);
+		
+		/*
+		 * Esercizio:
+		 * Chiedere di inserire il nome, cognome ed età e far stamapre tutti in un unica riga
+		 * 
+		 * es:
+		 * Inserisci il tuo nome:
+		 * Michele
+		 * 
+		 * Inserisci il tuo congome:
+		 * Sorbo
+		 * 
+		 * Inserisci la tua età:
+		 * 44
+		 * 
+		 * Nome: Michlele Cognome: Sorbo Età: 44
+		 */
 
+		System.out.println("Inserisci il tuo nome:");
+		String nome_es = input.nextLine();
+		
+		System.out.println("Inserisci il tuo congnome:");
+		String cognome_es = input.nextLine();
+		
+		System.out.println("Inserisci la tua età:");
+		int eta_es = input.nextInt();
+		
+		System.out.println("Nome: " + nome_es + " Cognome: " + cognome_es + " Età: " + eta_es);
+		
+		
+		
+		//Costanti
+		//A differenza delle variabili le costanti non possono essere modificate dopo averle dichiarate
+		/*
+		 * 1) Le costanti si scrivono sempre tutto in MAIUSCOLO
+		 * 
+		 * 2) Si devono sia dichiarare che inizializzare contemporaneamente
+		 * 
+		 * 3) Prima del tipo per dichiarare una costante inserisco la key final		
+		 */
+		
+		final double PIGRECO = 3.14;
+		
+		final String nomeSocietà = "TalentForm";
+		
 	}
+	
+	
 
 }
