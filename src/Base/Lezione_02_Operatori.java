@@ -106,6 +106,35 @@ public class Lezione_02_Operatori {
 		System.out.println(n1 != n2);
 		
 		
+		//Operatori di incremento e decremento
+		/*
+		 * ++ Incremnto di 1
+		 * 
+		 * -- Decremento di 1
+		 * 
+		 * Questi operatori cambiano il valore della variabile
+		 * 
+		 */
+		
+		int i = 1;
+		
+		i++; //Incremento la i
+		System.out.println("Il valore della i dopo l'incremento è: " + i);
+		
+		i = 3;
+		System.out.println("Il valore di i++ è: " + ++i);
+		
+		int y = 3;
+		y--;
+		System.out.println("Il valore di y è: " + y);
+		
+		y = 5;
+		System.out.println("Il valore di --y è: " + --y);
+		
+		/*
+		 * Per stamapre l'incremento o il decremento ricordati di fare --/++ e la variabile da prendere come riferimento
+		 */
+		
 	}
 
 }

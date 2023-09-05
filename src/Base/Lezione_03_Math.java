@@ -25,6 +25,12 @@ public class Lezione_03_Math {
 		//Valore assoluto di un numero
 		System.out.println(Math.abs(n3));
 		
+		//Potenza di un numero
+		int base = 3;
+		int esponente = 5;
+		
+		System.out.println(Math.pow(base, esponente));
+		
 		
 		//Generare un numero Randomico
 		System.out.println(Math.random() * 10);
