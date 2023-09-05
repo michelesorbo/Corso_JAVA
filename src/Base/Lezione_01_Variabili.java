@@ -72,6 +72,7 @@ public class Lezione_01_Variabili {
 		System.out.println(mille);
 		float milleFloat = 1000.0f;
 		System.out.println(milleFloat);
+		
 
 	}
 
