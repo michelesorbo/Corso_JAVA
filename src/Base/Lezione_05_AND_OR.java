@@ -61,6 +61,39 @@ public class Lezione_05_AND_OR {
 		}else {
 			System.out.println("Non puoi guidare");
 		}
+		
+		
+		/*
+		 * 
+		 * Esercizio:
+		 * 
+		 * Premio prodzione. Scrivere un programma che chieda il numero di pezzi venduti e il fatturato per 
+		 * Trimestre.
+		 * 
+		 * Se l'agente ha venduto più di 300 pezzi o ha fatturato più di 10000€ può ricevere 
+		 * il premio di produzione
+		 * 
+		 * se ha diritto al premio visualizzare il premio ottenuto.
+		 * 
+		 * che è sempre il 5% del fatturato
+		 * 
+		 */
+		
+		int pezzi, fatturato;
+		
+		System.out.println("Quanti ezzi hai venduto?");
+		pezzi = in.nextInt();
+		
+		System.out.println("Quale è il tuo fatturato?");
+		fatturato = in.nextInt();
+		
+		if(pezzi >= 300 || fatturato >= 10000) {
+			System.out.println("Hai diritto al premio");
+			System.out.println("Il premio è: " + (fatturato * 5)/100 + "€");
+		}else {
+			System.out.println("Premio non disponibile");
+		}
+		
 
 	}
 
