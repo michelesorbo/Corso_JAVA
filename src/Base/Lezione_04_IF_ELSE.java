@@ -213,24 +213,17 @@ public class Lezione_04_IF_ELSE {
 			if(scelta == 1) {
 				System.out.println("Hai scelto la somma Somma");
 				
-				
-				
 				System.out.println("La somma è: " + (es_n1+es_n2));
 			}else if(scelta == 2) {
 				System.out.println("Hai scelto la Sottrazione");
-				
-				
 				
 				System.out.println("La sottrazione è: " + (es_n1-es_n2));
 			}else if(scelta == 3) {
 				System.out.println("Hai scelto la Moltiplicazione");
 				
-				
-				
 				System.out.println("La moltiplicazione è: " + (es_n1*es_n2));
 			}else {
 				System.out.println("Hai scelto la Divisione");
-				
 				
 				if(es_n2 != 0) {
 					System.out.println("Il risultato della divisione è: " + (es_n1 / es_n2));
@@ -240,8 +233,26 @@ public class Lezione_04_IF_ELSE {
 			}
 			
 			
+		} //Chiudo Else
+		
+		
+		/*
+		 * 
+		 * Chiedere un numero intero da tastiera e dire se è pari o dispari
+		 * 
+		 */
+		
+		System.out.println("inserisci un numero e ti dirò se è pari o dispari");
+		
+		int es2_n = in.nextInt();
+		
+		if(es2_n%2 == 0) {
+			System.out.println("Numero Pari");
+		}else {
+			System.out.println("numero Dipsari");
 		}
 		
+				
 	}
 
 }
