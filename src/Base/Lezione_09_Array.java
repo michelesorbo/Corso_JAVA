@@ -86,6 +86,37 @@ public class Lezione_09_Array {
 			System.out.println(alunno);
 		}
 		
+		/*
+		 * Creazione della classe.
+		 * Chidere al'utente di quanti alunni è composta la classe.
+		 * Creare un array e inserire gli alunni.
+		 * 
+		 * ES: 
+		 * Quanti alunni vuoi inserire? -> 3
+		 * Inserisci 1° alunno: Michele
+		 * Inserisci 2° alunno: Antonio
+		 * Inserisci 3° alunno: Mario
+		 * 
+		 * Gli alunni inserito sono: Michele Antonio Mario
+		 */
+		
+		System.out.println("Quanti alunni vuoi inserire");
+		int n_alunni = in.nextInt(); //Chiedo quanto deve essere capiente l'array
+		
+		//Dopo che ho chiesto la grandezza dell'arry posso crearlo vuoto
+		String[] es_alunni = new String[n_alunni];
+		
+		//Chiedo di inserire i nomi, popolo l'array
+		
+		for(i = 0; i < es_alunni.length; i++) {
+			System.out.println("Inserisci il "+ (i + 1) +"° alunno: ");
+			es_alunni[i] = in.next(); 
+		}
+		
+		//Dopo aver riempito l'array lo stampo a video
+		for(String al : es_alunni) {
+			System.out.print(al + ", ");
+		}
 		
 
 	}
