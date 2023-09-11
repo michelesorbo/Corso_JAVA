@@ -10,9 +10,14 @@ public class Lezione_07_FOR {
 		Scanner in = new Scanner(System.in);
 		
 		/*
-		 * Il costrutto FOR serve a ripetere un blococ di codice un determinato numero di volte
+		 * Il costrutto FOR serve a ripetere un blocco di codice un determinato numero di volte
 		 * 
 		 * for(indice iniziale; condizione di uscita; incremento)
+		 * 
+		 * ATTENZIONE!!!:
+		 * Con il for è semplice far andare il loop il codice, stare attenti all'indice iniziale
+		 * e alla condizione di uscita. Se l'incremento è sbagliato l'indice non incontreràò mai
+		 * la condizione di uscita.
 		 */
 		
 		System.out.println("1");
@@ -102,13 +107,14 @@ public class Lezione_07_FOR {
 		 * 
 		 */
 		
-		int somma = 0;
-		int numero_in;
+		int somma = 0; //Variabile per ricordare la somme dei numeri inseriti
+		int numero_in; //Variabile per ricordare il numero inserito da tastiera
 		
-		for(i = 1; i <= 5; i++) {
+		for(i = 1; i <= 5; i++) { //Per ripetere 5 volte la domanda di inserimento numeri
 			System.out.println("Inserisci un numero da sommare");
-			numero_in = in.nextInt();//PRendo il numero da tastiera
+			numero_in = in.nextInt();//Prendo il numero da tastiera
 			somma += numero_in; //somma = somma + numero_in;
+			//System.out.println("La somme del cilo è: ");
 		}
 		
 		System.out.println("La somma dei numeri inseriti è: " + somma);
@@ -124,7 +130,27 @@ public class Lezione_07_FOR {
 		 * 
 		 */
 		
+		int var; //Dichiaro
+		int var2 = 10; //Dichiaro e inizializzo
 		
+		int somma_pari = 0, somma_dispari = 0, numero_in2;
+		
+		for(int y = 1; y <= 10; y++) {
+			System.out.println("Inserisci un numero");
+			numero_in2 = in.nextInt();
+			
+			//Prima di andare a sommare il numero inserito devo vedere dove sommarlo
+			//se nel pari o nel dispari
+			if(numero_in2%2 == 0) {
+				somma_pari += numero_in2;
+			}else {
+				somma_dispari += numero_in2;
+			}
+		} //Fine FOR
+		
+		System.out.println("LA somma dei numeri pari è: " + somma_pari);
+		System.out.println("LA somma dei numeri dispari è: " + somma_dispari);
+		System.out.println("La somma totale è: " + (somma_pari + somma_dispari));
 	}
 
 }
