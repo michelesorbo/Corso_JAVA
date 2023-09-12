@@ -1,9 +1,13 @@
 package Base;
 
+import java.util.Scanner;
+
 public class Lezione_12_Cast {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		Scanner in = new Scanner(System.in);
 		
 		int n1 = 3;
 		String n2 = "4";
@@ -43,6 +47,21 @@ public class Lezione_12_Cast {
 		 * Aggiungere anche la media
 		 */
 		
+		System.out.println("Inserisci i numeri separati da una virgola");
+		String numeri = in.nextLine();
+		
+		String[] numeri_ar = numeri.trim().replace(" ", "").split(",");
+		
+		System.out.println(numeri_ar.length);
+		int somma = 0;
+		
+		//Faccio il forEach per sommare tutti gli elementi dell'array
+		for(String el:numeri_ar) {
+			somma += Integer.parseInt(el);
+		}
+		
+		System.out.println("La somma dei numeri inseriti è: " + somma);
+		System.out.println("La media dei numeri: " + (somma/numeri_ar.length));
 	}
 
 }
