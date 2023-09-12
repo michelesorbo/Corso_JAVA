@@ -1,6 +1,7 @@
 package Base;
 
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class Lezione_09_Array {
 
@@ -117,6 +118,17 @@ public class Lezione_09_Array {
 		for(String al : es_alunni) {
 			System.out.print(al + ", ");
 		}
+		
+		/*
+		 * Per stamapre il contenuto dell'arrey senza utilizzare un ciclo si usa il metodo
+		 * Arrays.toString(nome_array)
+		 * 
+		 * per utilizzare questo metodo importare la libreria java.util.Arrays con il comando:
+		 * 
+		 * import java.util.Arrays;
+		 * 
+		 * che va inserita prima dell'inzio della classe
+		 */
 		
 
 	}
