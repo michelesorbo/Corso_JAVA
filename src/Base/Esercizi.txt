@@ -1,0 +1,24 @@
+Esercizio 1:
+Creare una rubrica di persone.
+
+Il programma presnta un menù con la seguente forma:
+Scegli cosa fare:
+1) Aggiungi persona
+2) Elimina persona
+3) Stampa elenco persone
+4) Ordina le persone
+5) Esci
+
+Scleta 1)
+Inserisci il nome della persona da aggiungere-> Alessio
+Persona Aggiunta con successo
+
+Scelta 2)
+Inserisci il nome della persona da elimenare-> Alessio
+Persona rimossa con successo
+
+Scelta 3)
+Stapare tutte le persone nella lista
+
+Scelta 4)
+Ordinare la lista e dopo far uscire: Elenco ordinato
