@@ -56,3 +56,9 @@ Scegli
 2) Elimina un ToDo
 3) Chiudi
 
+***** FUNZIONI ******
+Esercizio 3:
+Creare una funzione che passato un prezzo e la percentuale di sconto stampi a video il prezzo scontato
+
+Il prezzo è di tipo double, la percentuale è di tipo int
+
