@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Scanner;
 
 public class Lezione_15_GestioneDate {
 
@@ -55,7 +56,42 @@ public class Lezione_15_GestioneDate {
 		//Controllare che il giorno sia compreso tra 1 e 31 in caso di errore mettere come valore di default 1
 		//Controllare se il mese è compreso tra 1 e 12 in caso di errore mettere come valore di default 1
 		
+		confrontoDate(); //Faccio eseguire la funzione
+	} //Fine Main
+	
+	public static void confrontoDate() {
+		Scanner in = new Scanner(System.in);
+		int anno,mese,giorno;
 		
+		System.out.println("CONFRONTIAMO LE DATE\nse metti date errate inserirò 1 sia come mese che come giorno");
+		
+		System.out.println("Inserisic il giorno");
+		giorno = in.nextInt();
+		System.out.println("Inserisci mese");
+		mese = in.nextInt();
+		System.out.println("Inserisci anno");
+		anno = in.nextInt();
+		
+		//Controlle se giorno e mese sono corretti altrimenti inserisco 1
+		giorno = giorno > 0 && giorno < 32 ? giorno : 1;
+		mese = mese > 1 && mese < 13 ? mese : 1;
+		anno = anno > 0 ? anno : 1;
+		
+		//Creo la data odierna
+		LocalDate data_odierna = LocalDate.now();
+		
+		//Creo la data che mi è stata passata
+		LocalDate data_inserita = LocalDate.of(anno, mese, giorno);
+		
+		if(data_odierna.compareTo(data_inserita) == 0) {
+			System.out.println("La data inserita è uguale alla data odierna");
+		}else if(data_odierna.compareTo(data_inserita) > 0) {
+			System.out.println("La data inserita è una data nel passato");
+		}else {
+			System.out.println("La data inserita è una data nel futuro");
+		}
 	}
+	
+	
 
 }
