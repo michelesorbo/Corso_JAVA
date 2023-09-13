@@ -41,6 +41,11 @@ public class Lezione_14_Funzioni {
 		
 		System.out.println(div);
 		
+		double nd1 = 15.52, nd2 = 8.6;
+		somma(nd1,nd2);
+		somma(3,6,9);
+		somma(3,5);
+		somma(13.6,56.9);
 	}
 	
 	//FUORI DALLA FUNZIONE MAIN POSSO CREARE NUOVE FUNZIONI
@@ -86,6 +91,15 @@ public class Lezione_14_Funzioni {
 			//System.out.println("Divisione impossibile");
 			return 0;
 		}
+	}
+	
+	//Posso anche creare un OVERLOADED dei Metodi/Funzioni
+	public static void somma(double a, double b) {
+		System.out.println("La somma è: " + (a+b));
+	}
+	
+	public static void somma(int a, int b, int c) {
+		System.out.println("La somma è: " + (a+b+c));
 	}
 
 }

@@ -135,6 +135,34 @@ public class Lezione_02_Operatori {
 		 * Per stamapre l'incremento o il decremento ricordati di fare --/++ e la variabile da prendere come riferimento
 		 */
 		
+		//Operatore Ternario
+		/*
+		 * Serve a inizializzare una variabile in base al contenuto di un'altra variabile
+		 * 
+		 * variabile = condizione ? caso vera : caso falsa
+		 */
+		
+		int imp_utente = 8;
+		
+		//Voglio settare il mese, se l'imp_utente è compreso tra 1 e 12 inserisco il valore dell'utente altrimenti inserisco 1
+		
+		int mese = imp_utente > 0 && imp_utente < 13 ? imp_utente : 1;
+		
+//		if(imp_utente > 0 && imp_utente < 13) {
+//			mese = imp_utente;
+//		}else {
+//			mese = 1;
+//		}
+		
+		System.out.println("Il mese è: " + mese);
+		
+		
+		String nome = "Alessio";
+		String cognome = nome == "Michele" ? "Sorbo" : "NEssun Cognome";
+		System.out.println(cognome);
+		
+		
+		
 	}
 
 }
