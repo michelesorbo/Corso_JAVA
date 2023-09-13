@@ -62,3 +62,11 @@ Creare una funzione che passato un prezzo e la percentuale di sconto stampi a vi
 
 Il prezzo è di tipo double, la percentuale è di tipo int
 
+Esercizio 4: FUNZIONI SENZA RITORNO
+Creare 4 funzioni una per la somma di 2 interi, una per la sottrazione di 2 interi, una per la moltiplicazione di 
+2 interi e una per la divisione di 2 interi.
+
+Per la divisione controllare se il secondo parametro è diverso da 0.
+
+Nella funzione mail creare un ciclo per far scegliere quale operazione compiere e inserire l'ozione di uscita
+

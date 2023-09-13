@@ -31,6 +31,16 @@ public class Lezione_14_Funzioni {
 		somma(13,45);
 		int n1 = 3,n2=5;
 		somma(n1,n2); //somma(a=n1,b=n2) -> somma(a=3,b=5)
+		
+		System.out.println("Funzione Sconto con ritorno");
+		double prezzo_s = calcolaSconto(1500,5); //Assegno il ritorno della funzione ad una variabile
+		System.out.println("Lo sconto diretto da funzione è: " + calcolaSconto(2500,5));
+		System.out.println("Lo sconto da variabile è: " + prezzo_s);
+		
+		double div = dividi(8,0);
+		
+		System.out.println(div);
+		
 	}
 	
 	//FUORI DALLA FUNZIONE MAIN POSSO CREARE NUOVE FUNZIONI
@@ -58,6 +68,24 @@ public class Lezione_14_Funzioni {
 	//Per passare più parametri ad una funzione separari i parametri con un ,
 	public static void somma(int a, int b) {
 		System.out.println("La somma è: " + (a+b));
+	}
+	
+	//Funzioni con ritorno
+	//I ritorni sono i tipi delle variabili (es int, String, double, Integer, int[], ArrayList
+	//La funzione con ritorno serve per settare altre variabili.
+	//Se la voglio stampare direttamente devo includerla in un System.out
+	public static double calcolaSconto(double prezzo, int sconto) {
+		double prezzo_scontato = (prezzo * (100-sconto))/100;
+		return prezzo_scontato; //Si deve concludere sempre con return
+	}
+	
+	public static double dividi(double a, double b) {
+		if(b != 0) {
+			return a/b;
+		}else {
+			//System.out.println("Divisione impossibile");
+			return 0;
+		}
 	}
 
 }
