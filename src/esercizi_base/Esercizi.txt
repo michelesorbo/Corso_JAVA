@@ -70,3 +70,19 @@ Per la divisione controllare se il secondo parametro è diverso da 0.
 
 Nella funzione mail creare un ciclo per far scegliere quale operazione compiere e inserire l'ozione di uscita
 
+
+
+ESERCIZIO 5:
+Gioca alla morra cinese con il PC
+	    Il sistema esce quando viene scritto fine
+	    L'utente deve inserire Carta, Forbici o Sasso (non importa minuscole o maiscole)
+	    Quando faccio un lancio devo conoscere l'esito (Vinto, Perso, Paraggio)
+	    Quado finisco il gioco devo conoscere quate partite ho fatto e quante volte ho vinto perso o pareggiato
+
+
+ESERCIZIO 6:
+Scrivere una funzione che verifiche se una parola è palindroma.
+La funzion etornerà true se la parola è palindroma e false altrimenti
+
+Esercizio 7:
+Creare una funzione che ritorni il massimo di tre numeri interi passati come parametro
