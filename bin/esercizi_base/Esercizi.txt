@@ -86,3 +86,11 @@ La funzion etornerà true se la parola è palindroma e false altrimenti
 
 Esercizio 7:
 Creare una funzione che ritorni il massimo di tre numeri interi passati come parametro
+
+Esercizio 8:
+Creare 2 funzioni
+La prima riceve come parametro un array e lo riempie con numeri casuali
+
+La seconda riceverà un array, controlla se è pieno e stamperà la somma di tutti gli elementi dell'array
+
+GLI ARRAY SARANNO DI INTERI
