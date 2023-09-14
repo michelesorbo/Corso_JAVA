@@ -27,9 +27,12 @@ public class Lezione_17_GestioneFile {
 		//Scrivere dentro un file
 		
 		try {
-			FileWriter writer = new FileWriter(file); //FileWriter serve a scrivere in un file.
+			//FileWriter serve a scrivere in un file.
+			//FileWriter writer = new FileWriter(file); //Apro il file e concello il contenuto al suo interno
+			FileWriter writer = new FileWriter(file, true); //Vado ad aprire il file e posiziono il cursore alla fine del file
 			
-			writer.write("Ciao a tutti"); //Scrivo nel file
+			//writer.write("Scrivo cose nuove"); //Scrivo nel file cancellando il contenuto
+			writer.append("\nSono un nuovo testo"); //Appende serve a scrivere nel file senza cancellare
 			
 			writer.close();//Devo sempre chiudere il writer
 			
@@ -37,6 +40,7 @@ public class Lezione_17_GestioneFile {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} 
+		
 
 	}
 
