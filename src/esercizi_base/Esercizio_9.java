@@ -43,8 +43,7 @@ public class Esercizio_9 {
 				
 			}else if(scelta ==2) {
 			
-				//Codice per visaualizzare tute le frasi
-				//Chi vuol epuò fare una funzione
+				leggiFrasi(frasi);
 				
 			}else if(scelta == 3) {
 				System.out.println("Chiudo il programma");
@@ -72,5 +71,28 @@ public class Esercizio_9 {
 		}
 		
 	}
+	
+	
+	public static void leggiFrasi(File file) {
+		
+		try {
+			FileReader fr = new FileReader(file);
+			int data = fr.read();
+			System.out.println("\n\n*** INIZIO FRASI ****\n\n");
+			while(data != -1) {
+				System.out.print((char)data);
+				data = fr.read();
+			}
+			
+			System.out.println("\n\n*** FINE FRASI ****\n\n");
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
+	
 
 }

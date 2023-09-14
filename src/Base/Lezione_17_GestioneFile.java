@@ -40,7 +40,7 @@ public class Lezione_17_GestioneFile {
 		} 
 		
 		
-		
+		/*
 		//Lettura di un file leggendo un singolo carattere per volta
 		try {
 			
@@ -55,6 +55,30 @@ public class Lezione_17_GestioneFile {
 			while(data != -1) {
 				System.out.print((char)data);
 				data = reader.read(); //Passo al carattere successivo
+			}
+			
+		}catch(IOException e) {
+			e.printStackTrace();
+		}
+		*/
+		
+		
+		//Metodo alternativo alla lettura del file
+		try {
+			//Attenzione Scanner non legge \n quindi per andare accapo usare println
+			FileReader reader = new FileReader(file);
+			Scanner FileScanner = new Scanner(reader);
+			
+			//System.out.println(FileScanner.nextLine());
+			
+			//Cercare un elemento in un file di testo
+			while(FileScanner.hasNextLine()) {
+				String data = FileScanner.nextLine();
+				if(data.contains("michele")) {
+					System.out.println(data); //Ritorna una stringa contenete la riga del file
+				}
+				
+				
 			}
 			
 		}catch(IOException e) {

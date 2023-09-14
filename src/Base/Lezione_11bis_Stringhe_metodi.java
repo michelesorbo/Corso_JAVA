@@ -102,6 +102,10 @@ public class Lezione_11bis_Stringhe_metodi {
 		String[] ar_num = numeri.split(",");
 		
 		System.out.println(Arrays.toString(ar_num));
+		
+		//Verificare se in una stringa è contenuto un elemento
+		String str5 = "Alunno alessio leodori";
+		System.out.println(str5.contains("alessio"));
 
 	}
 

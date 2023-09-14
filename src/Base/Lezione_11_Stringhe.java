@@ -92,7 +92,6 @@ public class Lezione_11_Stringhe {
 		}else {
 			System.out.println("Parola non palindorma");
 		}
-		
 
 	}
 
