@@ -1,8 +1,6 @@
 package Base;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.Scanner;
 
 public class Lezione_17_GestioneFile {
@@ -40,6 +38,29 @@ public class Lezione_17_GestioneFile {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} 
+		
+		
+		
+		//Lettura di un file leggendo un singolo carattere per volta
+		try {
+			
+			FileReader reader = new FileReader(file); //Apro il file in sola lettura
+			int data = reader.read();//Leggo il contenuto del file e lo salvo nella vabile intera data
+			//La funzione read ritorna la codifica Ascii dei caratteri. Il carattere per indicare
+			// la fine del file è -1
+			
+			System.out.println(data); //Stampo la codifica Ascii del primo carattere
+			System.out.println((char)data); //Converto la codifica Ascii del primo cattere in char
+			
+			while(data != -1) {
+				System.out.print((char)data);
+				data = reader.read(); //Passo al carattere successivo
+			}
+			
+		}catch(IOException e) {
+			e.printStackTrace();
+		}
+		
 		
 
 	}

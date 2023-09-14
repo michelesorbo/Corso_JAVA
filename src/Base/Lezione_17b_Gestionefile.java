@@ -21,6 +21,8 @@ public class Lezione_17b_Gestionefile {
 		}catch(IOException e) {
 			e.printStackTrace();
 		}
+		
+		
 
 	}
 

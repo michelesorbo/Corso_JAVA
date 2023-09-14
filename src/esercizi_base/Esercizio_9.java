@@ -29,7 +29,7 @@ public class Esercizio_9 {
 		int scelta;
 		
 		do {
-			System.out.println("Cosa vuoi fare?\n1) Scrivi una frase\n2) Chiudi il programma");
+			System.out.println("Cosa vuoi fare?\n1) Scrivi una frase\n2) Leggi le frasi \n3) Chiudi il programma");
 			scelta = in.nextInt();
 			
 			in.nextLine(); //Serve per resettare lo scanner
@@ -41,13 +41,18 @@ public class Esercizio_9 {
 				
 				scriviFrase(frasi,frase); //Invoco la funzione con i parametri richiesti
 				
-			}else if(scelta == 2) {
+			}else if(scelta ==2) {
+			
+				//Codice per visaualizzare tute le frasi
+				//Chi vuol epuò fare una funzione
+				
+			}else if(scelta == 3) {
 				System.out.println("Chiudo il programma");
 			}else {
 				System.out.println("Scelta non consentita");
 			}
 			
-		}while(scelta != 2);
+		}while(scelta != 3);
 
 	} //Fine Mail
 	
