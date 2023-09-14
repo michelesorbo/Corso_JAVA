@@ -104,7 +104,7 @@ public class Esercizio_10_RubricaClienti {
 		cf = in.nextLine();
 		
 		//Controllo se il cf è scritto bene
-		Pattern cf_c = Pattern.compile("^[a-z]{6}[0-9]{2}[a-a]{1}[0-9]{2}[a-a]{1}[0-9]{3}[a-a]{1}$");
+		Pattern cf_c = Pattern.compile("^[a-z]{6}[0-9]{2}[a-z]{1}[0-9]{2}[a-z]{1}[0-9]{3}[a-z]{1}$");
 		Matcher cf_m = cf_c.matcher(pulisciTesto(cf));
 		
 		System.out.println(cf_m.find());
