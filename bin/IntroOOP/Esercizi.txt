@@ -13,4 +13,5 @@ Esercizio 3:
 Creare la classe per le operazioni sul rettangolo.
 Le proprietà saranno base e altezza e sono di tipo double
 Oltre ai classici get e ste e toString creare i metodi per il calcolo dell'area e del perimetro
-Controllare se i valori inseriti come base e altezza siano positivi
+Controllare se i valori inseriti come base e altezza siano positivi (chi vuole può usare l'operatore ternario)
+Se il valore inserito è da 0 inpoi applica il valore inserito altrimenti inserisce il valore assoluto del numero
