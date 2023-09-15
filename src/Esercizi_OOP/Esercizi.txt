@@ -32,3 +32,7 @@ Esercizio 4:
         5) Info Conto (Restituisce Proprietario e N° Conto)
         0) Esci
      */
+
+     
+Esercizio 5:
+Creare una classe Contatore con un campo valore e metodi per incrementare e decrementare il valore:

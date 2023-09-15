@@ -15,28 +15,38 @@ public class Veicolo {
 	public String modello;
 	public String proprietario;
 	private String stato;
+	private int costo;
+	private double consumo_km;
 	
-	Veicolo(String targa, String modello, String proprietario){
+	Veicolo(String targa, String modello, String proprietario, int costo, double consumo_km){
 		this.targa = targa;
 		this.modello = modello;
 		this.proprietario = proprietario;
 		this.stato = "Usata";
+		this.costo = costo;
+		this.consumo_km = consumo_km;
 	}
 	
-	Veicolo(String targa, String modello){
+	Veicolo(String targa, String modello, int costo, double consumo_km){
 		this.targa = targa;
 		this.modello = modello;
 		this.proprietario = "";
 		this.stato = "Nuova";
+		this.costo = costo;
+		this.consumo_km = consumo_km;
 	}
 	
 	//Creo il metodo per visualizzare lo stato che è di tipo private
 	public String vediStato() {
-		if(stato == "Usato") {
-			return "Ciao";
+		if(stato == "Nuova") {
+			return "L'auto costa " + costo + " + 300€ per immatricolazione + 500€ per messa in strada";
 		}else {
-			return "Ciao";
+			return "L'auto costa " + costo + " + 300€ per passaggio di proprietà";
 		}
+	}
+	
+	public String costoViaggio(double km) {
+		return (km * consumo_km) + "€";
 	}
 	
 	
