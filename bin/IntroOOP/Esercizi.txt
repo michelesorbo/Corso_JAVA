@@ -1,0 +1,3 @@
+Creare una Calsse Studente con: Nome Cognome Matricola
+Creare il costruttore della classe 
+Creare il metodo Saluta ritorno Ciao dallo studente nome

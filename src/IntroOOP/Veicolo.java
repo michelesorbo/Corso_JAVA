@@ -7,6 +7,10 @@ public class Veicolo {
 	//Lo stato è Nuovo aggiungere 300€ per immatricolazione + 500€ per messa in strada
 	//Lo stato è usato aggiungere solo 300€ per passaggio di proprietà
 	
+	
+	//Per ogni auto Aggiungere un costo medio per km.
+	//Creare un metodo che ricevuti il numeo di km percorsi calcola il costo del viaggio
+	
 	public String targa;
 	public String modello;
 	public String proprietario;
