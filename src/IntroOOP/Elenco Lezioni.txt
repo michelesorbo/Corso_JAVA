@@ -1,3 +1,5 @@
+In JAVA Esiste anche il POLIMORFISMO che altro non è la sovrascrittura dei metodi
+
 1) Persona 
    Persona_start
 

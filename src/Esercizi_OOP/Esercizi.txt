@@ -15,3 +15,20 @@ Le proprietà saranno base e altezza e sono di tipo double
 Oltre ai classici get e ste e toString creare i metodi per il calcolo dell'area e del perimetro
 Controllare se i valori inseriti come base e altezza siano positivi (chi vuole può usare l'operatore ternario)
 Se il valore inserito è da 0 inpoi applica il valore inserito altrimenti inserisce il valore assoluto del numero
+
+Esercizio 4:
+
+/*
+        Creare una classe ContoCorrente in grado di simulare un conto corrente reale,
+        quindi con versamenti, prelievi, stampa saldo e la lista degli ultimi 5 movimenti.
+        Costruttore: Saldo iniziale, Proprietario, N° Conto
+
+        Far partire una schermata con le opzioni es:
+        Benvenuto nel tuo conto
+        1) Versa
+        2) Preleva
+        3) Saldo Attuale
+        4) Ultimi 5 movimenti
+        5) Info Conto (Restituisce Proprietario e N° Conto)
+        0) Esci
+     */
