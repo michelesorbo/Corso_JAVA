@@ -1,3 +1,16 @@
 Creare una Calsse Studente con: Nome Cognome Matricola
 Creare il costruttore della classe 
 Creare il metodo Saluta ritorno Ciao dallo studente nome
+
+Esercizio 2: 
+Creare una classe Libro con campi titolo, autore e anno di pubblicazione.
+Creare i metodo get e set delle proprietà.
+Creare il metodo toString()
+Creare il costruttore
+
+
+Esercizio 3:
+Creare la classe per le operazioni sul rettangolo.
+Le proprietà saranno base e altezza e sono di tipo double
+Oltre ai classici get e ste e toString creare i metodi per il calcolo dell'area e del perimetro
+Controllare se i valori inseriti come base e altezza siano positivi
