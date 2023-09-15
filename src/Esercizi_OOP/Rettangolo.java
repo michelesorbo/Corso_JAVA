@@ -18,7 +18,7 @@ public class Rettangolo {
 
 
 	public void setBase(double base) {
-		this.base = base >= 0 ? base : Math.abs(base);;
+		this.base = base >= 0 ? base : Math.abs(base);
 	}
 
 
@@ -28,7 +28,7 @@ public class Rettangolo {
 
 
 	public void setAltezza(double altezza) {
-		this.altezza = altezza >= 0 ? altezza : Math.abs(altezza);;
+		this.altezza = altezza >= 0 ? altezza : Math.abs(altezza);
 	}
 
 
