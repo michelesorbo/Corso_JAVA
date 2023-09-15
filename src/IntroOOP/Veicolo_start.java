@@ -12,6 +12,7 @@ public class Veicolo_start {
 		System.out.println(v2.vediStato());
 		System.out.println(v1.vediStato());
 		System.out.println(v1.costoViaggio(15000));
+		System.out.println(v2.costoViaggio(15000));
 	}
 
 }

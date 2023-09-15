@@ -37,7 +37,7 @@ public class ContoCorrente {
         this.movimentiConto("Vesato " + somma);
     }
 
-    void preleva(double somma) {
+    public void preleva(double somma) {
         if(somma > saldo) {
             System.out.println("Non puoi prelevare saldo inferiore");
         }else {
@@ -47,11 +47,11 @@ public class ContoCorrente {
         }
     }
 
-    void stampa_saldo() {
+    public void stampa_saldo() {
         System.out.println("Il saldo attuale è: " + saldo);
     }
 
-    void info_conto() {
+    public void info_conto() {
         System.out.println("Proprietario: " + proprietario);
         System.out.println("N° Conto: " + n_conto);
         System.out.println("Il saldo attuale è: " + saldo);
