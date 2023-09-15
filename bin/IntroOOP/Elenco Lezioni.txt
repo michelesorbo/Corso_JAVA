@@ -1,0 +1,8 @@
+1) Persona 
+   Persona_start
+
+2) Veicolo
+   Veicolo_start
+   
+3) Studente -> Incapsulamento
+   Studente_start

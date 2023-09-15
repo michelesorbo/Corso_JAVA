@@ -32,7 +32,9 @@ public class Veicolo {
 	
 	//Creo il metodo per visualizzare lo stato che è di tipo private
 	public String vediStato() {
-		return stato;
+		if(stato == "Usato") {
+			return "
+		}
 	}
 	
 	
