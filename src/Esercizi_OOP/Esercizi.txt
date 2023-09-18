@@ -62,5 +62,36 @@ la lista delle telefonate vuota
 
 - una procedura per la stampa dei dati della SIM e l'elenco delle telefonate.
 
+*********
+EREDITARIETA'
+*********
+
+Esercizio7
+
+Parte 1
+Il gestore di un negozio associa a tutti i suoi Prodotti un codice a barre univoco, una descrizione sintetica 
+del prodotto e il suo prezzo unitario. Realizzare una classe Prodotti con le opportune variabili d'istanza e metodi get e 
+toString().
+
+Parte 1b
+Aggiungere alla classe Prodotti un metodo applicaSconto che modifica il prezzo del prodotto diminuendolo del 5%.
+
+Parte 2
+Il gestore del negozio vuole fare una distinzione tra i prodotti Alimentari e quelli Non Alimentari . 
+Ai prodotti Alimentari viene infatti associata una data di scadenza (si veda la classe Data), 
+mentre a quelli Non Alimentari il materiale principale di cui sono fatti. 
+Realizzare le sottoclassi Alimentari e NonAlimentari estendendo opportunamente la classe Prodotti.
+Per la classe Alimentari creare il metodo stampa scadenza che stampi la data in:
+ nome_giorno, numero giorno, mese esteso e anno (martedì, 15 maggio 2024)
+
+Parte 3
+Modificare le due sottoclassi dell'esercizio 2 specializzando il metodo applicaSconto in modo che nel caso dei prodotti 
+Alimentari venga applicato uno sconto del 20% se la data di scadenza è a meno di 10 giorni dalla data attuale 
+(si usi il metodo getDifference della classe Data), mentre nel caso dei prodotti Non Alimentari venga applicato uno 
+sconto del 10% se il prodotto è composto da un materiale riciclabile (carta, vetro o plastica).
+
+Parte 4
+Realizzare una classe ListaSpesa che chieda all'utente di inserire i prodotti acquistati e calcoli 
+il totale della spesa applicando gli opportuni sconti se il cliente ha la tessera fedeltà.
 
 
