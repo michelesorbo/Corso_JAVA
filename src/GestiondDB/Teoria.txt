@@ -1,0 +1,5 @@
+Connesisone al db:
+https://dev.mysql.com/doc/connector-j/8.1/en/connector-j-usagenotes-connect-drivermanager.html
+
+Query SELECT:
+https://www.w3schools.com/sql/sql_ref_select.asp

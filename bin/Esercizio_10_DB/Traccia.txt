@@ -1,0 +1,22 @@
+Creare una Tabella per la gestione degli uffici di un azienda
+
+Per ogni ufficio si devono conoscere 
+Nome, Piano, Stanza, Interno.
+
+Per identificare l'ufficio utilizzo un ID numerico AutoIncrementale.
+
+Riempire il database con dati a piacere es:
+
+IT, 15, 15A, 152.
+Amministrazione, 14, 14B, 143
+Marketing, 14, 14A, 141
+
+Dopo aver completato il DB creare un software per la ricerca degli uffici.
+
+Il software deve richiedere se si vuole cercare per:
+ - Nome
+ - Piano
+ - Stanza
+ - Interno
+ 
+Fare un menù per far decidere cosa fare inserire 0 per la chiusura del programma 
