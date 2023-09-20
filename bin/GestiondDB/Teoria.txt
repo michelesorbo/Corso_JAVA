@@ -4,5 +4,8 @@ https://dev.mysql.com/doc/connector-j/8.1/en/connector-j-usagenotes-connect-driv
 Query SELECT:
 https://www.w3schools.com/sql/sql_ref_select.asp
 
-Queri INSERT INTO:
+Query INSERT INTO:
 https://www.w3schools.com/sql/sql_insert.asp
+
+Query INNER JOIN:
+https://www.w3schools.com/sql/sql_join_inner.asp
