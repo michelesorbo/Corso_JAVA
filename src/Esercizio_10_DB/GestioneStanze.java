@@ -44,6 +44,7 @@ public class GestioneStanze {
 		}while(scelta != 0);
 			
 
+		//Vado quando esco dal WHILE
 		
 	}
 	
@@ -64,6 +65,8 @@ public class GestioneStanze {
 				
 			}
 			ris += "+++++\n";
+			
+			conn.close(); //Chiudo la connessione al DB
 			
 			return ris;
 			
