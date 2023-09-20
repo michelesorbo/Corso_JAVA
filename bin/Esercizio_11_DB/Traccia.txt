@@ -1,0 +1,16 @@
+Creare un gestionale per la gestione del Personale
+
+Il software chiederà se si vuole inserire un nuovo utente.
+Quando inserisoc l'utente mostrare gli ID delgi uffici con i relativi
+nomi.
+
+1) IT
+2) Amministrazione
+3) MArketing
+...
+
+Se si vuole inserire un nuovo ufficio
+
+Visualizzare gli utenti che lavorano in un ufficio
+
+Visualizzare l'ufficio di un determinato utente
