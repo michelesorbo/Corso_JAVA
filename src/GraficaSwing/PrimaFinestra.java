@@ -57,6 +57,10 @@ public class PrimaFinestra extends JFrame {
 		lblNewLabel_1.setBounds(6, 47, 61, 16);
 		contentPane.add(lblNewLabel_1);
 		
+		JLabel lblNewLabel_2 = new JLabel("Mia label codice:");
+		lblNewLabel_2.setBounds(19, 87, 61, 16);
+		contentPane.add(lblNewLabel_2);
+		
 		inpNome = new JTextField();
 		inpNome.setBounds(60, 42, 130, 26);
 		contentPane.add(inpNome);

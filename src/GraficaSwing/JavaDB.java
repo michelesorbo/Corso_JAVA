@@ -34,4 +34,53 @@ public class JavaDB {
 		return ris;
 	}
 	
+	public void insUtenti(String nome, String cognome, String residenza, String eta, String id_u) {
+		String query;
+		query = "INSERT INTO utenti VALUES(null, '"+nome+"', '"+cognome+"', '"+residenza+"',"+Integer.parseInt(eta)+", "+Integer.parseInt(id_u)+")";
+		
+		try {
+			st.executeUpdate(query);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+	public ResultSet listaUtenti(String id) {
+		ResultSet rs = null;
+		
+		try {
+			rs = st.executeQuery("SELECT * FROM utenti WHERE id = " + Integer.parseInt(id));
+		} catch (NumberFormatException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return rs;
+	}
+	
+	public void modUtente(String nome, String cognome, String residenza, String eta, String id) {
+		String query;
+		
+		query = "UPDATE utenti ";
+		query += "SET nome = '" + nome + "', ";
+		query += "cognome = '"+ cognome +"', ";
+		query += "residenza = '" +residenza+"', ";
+		query += "eta = "+Integer.parseInt(eta)+" ";
+		query += "WHERE id = " + Integer.parseInt(id);
+		
+		System.out.println(query);
+		
+		try {
+			st.executeUpdate(query);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
 }

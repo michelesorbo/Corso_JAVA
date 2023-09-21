@@ -9,3 +9,6 @@ https://www.w3schools.com/sql/sql_insert.asp
 
 Query INNER JOIN:
 https://www.w3schools.com/sql/sql_join_inner.asp
+
+Query di UPDATE
+https://www.w3schools.com/sql/sql_update.asp
