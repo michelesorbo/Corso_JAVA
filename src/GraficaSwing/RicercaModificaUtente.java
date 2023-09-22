@@ -14,7 +14,7 @@ import java.sql.SQLException;
 import java.awt.event.ActionEvent;
 import javax.swing.SwingConstants;
 
-public class Nicola extends JFrame {
+public class RicercaModificaUtente extends JFrame {
 	
 	JavaDB DB = new JavaDB();
 
@@ -38,7 +38,7 @@ public class Nicola extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Nicola frame = new Nicola();
+					RicercaModificaUtente frame = new RicercaModificaUtente();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -50,7 +50,7 @@ public class Nicola extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Nicola() {
+	public RicercaModificaUtente() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
