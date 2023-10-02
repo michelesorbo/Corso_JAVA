@@ -1,5 +1,8 @@
 package GraficaSwing;
 
+import java.math.BigInteger;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.sql.*;
 
 public class JavaDB {
@@ -82,5 +85,53 @@ public class JavaDB {
 			e.printStackTrace();
 		}
 	}
+	
+	public boolean login(String mail, String pwd) {
+		//Devo convertire la password in MD5 o in qualsiasi Code per criptare la password
+		
+		String pwd_cod = getMd5Hash(pwd); //Codifico in MD5 la password passata
+		
+		try {
+			ResultSet rs = st.executeQuery("SELECT * FROM amministratori WHERE email = '"+mail+"' AND pwd = '"+pwd_cod+"'");
+			
+			if(rs.next()) {
+				return true;
+			}else {
+				return false;
+			}
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return false;
+		
+	}
+	
+	public String getMd5Hash(String input)
+    {
+        try
+        {
+            //static getInstance() method is called with hashing MD5
+            MessageDigest md = MessageDigest.getInstance("MD5");
+            //calculating message digest of an input that return array of byte
+            byte[] messageDigest = md.digest(input.getBytes());
+            //converting byte array into signum representation
+            BigInteger no = new BigInteger(1, messageDigest);
+            //converting message digest into hex value
+            String hashtext = no.toString(16);
+            while (hashtext.length() < 32)
+            {
+                hashtext = "0" + hashtext;
+            }
+            return hashtext;
+        }
+        //for specifying wrong message digest algorithms
+        catch (NoSuchAlgorithmException e)
+        {
+            throw new RuntimeException(e);
+        }
+    }
 	
 }

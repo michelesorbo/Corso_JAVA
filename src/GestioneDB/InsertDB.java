@@ -1,4 +1,4 @@
-package GestiondDB;
+package GestioneDB;
 
 import java.util.Scanner;
 import java.sql.*;
