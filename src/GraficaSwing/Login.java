@@ -57,6 +57,7 @@ public class Login extends JFrame {
 	public Login() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 700, 500);
+		setLocationRelativeTo(null); //Apre il Jframe al centro dello schermo
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
@@ -103,10 +104,13 @@ public class Login extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				lblErrore.setVisible(true);
 				//Tuttle le cose per fare il login
-				if(DB.login(txtMail.getText(), txtPwd.getText())) {
-					lblErrore.setText("Login OK");
-				}else {
+				if(DB.login(txtMail.getText(), txtPwd.getText()) < 0) {
 					lblErrore.setText("Errore Login");
+				}else {
+					lblErrore.setText(""+DB.login(txtMail.getText(), txtPwd.getText()));
+					GestionaleMainOld gm = new GestionaleMainOld(DB.login(txtMail.getText(), txtPwd.getText()));
+					gm.setVisible(true);
+					dispose();
 				}
 			}
 		});

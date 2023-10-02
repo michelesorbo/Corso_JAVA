@@ -54,7 +54,7 @@ public class Finestra1 extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				Finestra2 f2 = new Finestra2(); //Creo l'oggetto di Finestra 2
 				f2.setVisible(true); //Rendo visibile la finestra 2
-				dispose(); //Chido la visibilità della finestra in essere
+				dispose(); //Chido la visibilità della finestra in essere e deve essere l'ultima cosa che faccio
 			}
 		});
 		btn.setBounds(134, 129, 147, 29);

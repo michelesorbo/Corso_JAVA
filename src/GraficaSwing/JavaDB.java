@@ -86,18 +86,18 @@ public class JavaDB {
 		}
 	}
 	
-	public boolean login(String mail, String pwd) {
+	public int login(String mail, String pwd) {
 		//Devo convertire la password in MD5 o in qualsiasi Code per criptare la password
 		
 		String pwd_cod = getMd5Hash(pwd); //Codifico in MD5 la password passata
 		
 		try {
-			ResultSet rs = st.executeQuery("SELECT * FROM amministratori WHERE email = '"+mail+"' AND pwd = '"+pwd_cod+"'");
+			ResultSet rs = st.executeQuery("SELECT id FROM amministratori WHERE email = '"+mail+"' AND pwd = '"+pwd_cod+"'");
 			
 			if(rs.next()) {
-				return true;
+				return rs.getInt("id");
 			}else {
-				return false;
+				return -1;
 			}
 			
 		} catch (SQLException e) {
@@ -105,7 +105,7 @@ public class JavaDB {
 			e.printStackTrace();
 		}
 		
-		return false;
+		return -1;
 		
 	}
 	
