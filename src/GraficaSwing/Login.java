@@ -108,7 +108,7 @@ public class Login extends JFrame {
 					lblErrore.setText("Errore Login");
 				}else {
 					lblErrore.setText(""+DB.login(txtMail.getText(), txtPwd.getText()));
-					GestionaleMainOld gm = new GestionaleMainOld(DB.login(txtMail.getText(), txtPwd.getText()));
+					GestionaleMain gm = new GestionaleMain(DB.login(txtMail.getText(), txtPwd.getText()));
 					gm.setVisible(true);
 					dispose();
 				}
