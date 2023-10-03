@@ -207,6 +207,8 @@ public class GestionaleMain extends JFrame {
 				DB.insUtenti(tNome.getText(), tCognome.getText(), tResidenza.getText(), tEta.getText(), "1");
 				insInfo.setVisible(true);
 				insInfo.setText("Utente Inserico Correttamente");
+				tNome.setText("");
+				tCognome.setText("");
 			}
 		});
 		btnNewButton_2.setBounds(269, 347, 117, 29);
