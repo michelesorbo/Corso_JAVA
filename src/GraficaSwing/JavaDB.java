@@ -50,6 +50,29 @@ public class JavaDB {
 		
 	}
 	
+	public String listaUtenti() {
+		ResultSet rs = null;
+		String msg = "";
+		
+		try {
+			rs = st.executeQuery("SELECT * FROM utenti");
+			
+			while(rs.next()) {
+				msg += "Nome: " + rs.getString("nome") + "\n";
+				msg += "Cognome: " + rs.getString("cognome") + "\n\n";
+			}
+			
+		} catch (NumberFormatException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return msg;
+	}
+	
 	public ResultSet listaUtenti(String id) {
 		ResultSet rs = null;
 		
@@ -133,5 +156,21 @@ public class JavaDB {
             throw new RuntimeException(e);
         }
     }
+	
+	public String UtenteDet(int id) {
+		try {
+			ResultSet rs = st.executeQuery("SELECT nome, cognome FROM amministratori WHERE id = "+id+"");
+			if(rs.next()) {
+				return rs.getString("nome") + " " + rs.getString("cognome");
+			}else {
+				return "Nessun Utente";
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return "Nessun Utente";
+	}
 	
 }
