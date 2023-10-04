@@ -210,6 +210,7 @@ public class GestionaleMain extends JFrame {
 				tNome.setText("");
 				tCognome.setText("");
 				tEta.setText("");
+				tResidenza.setText("");
 			}
 		});
 		btnNewButton_2.setBounds(269, 347, 117, 29);
