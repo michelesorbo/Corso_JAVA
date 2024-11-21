@@ -234,7 +234,24 @@ public class Lezione_04_IF_ELSE {
 			
 			
 		} //Chiudo Else
+
+
+		/*
+		 * Calcola lo sconto di un articolo
+		 * 
+		 * Se il prezzo dell'articolo supera i 100€ applicare uno sconto del 25%.
+		 * 
+		 * Se la condizione è vera far visualizzare il prezzo scontato altrimenti far visualizzare Prodotto non in sconto
+		 */
 		
+		System.out.println("Inserisci il prezzo del capo: ");
+		double prezzo = in.nextDouble();
+		
+		if(prezzo >= 100) {
+			System.out.println("Il prezzo scontato è: " + (prezzo * 0.75) + "€");
+		}else {
+			System.out.println("Il capo non è in sconto.");
+		}
 		
 		/*
 		 * 
