@@ -89,7 +89,7 @@ public class Lezione_05_AND_OR {
 		
 		if(pezzi >= 300 || fatturato >= 10000) {
 			System.out.println("Hai diritto al premio");
-			System.out.println("Il premio è: " + (fatturato * 5)/100 + "€");
+			System.out.println("Il premio è: " + (fatturato * 0.05) + "€");
 		}else {
 			System.out.println("Premio non disponibile");
 		}
