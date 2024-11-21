@@ -81,7 +81,7 @@ public class Lezione_05_AND_OR {
 		
 		int pezzi, fatturato;
 		
-		System.out.println("Quanti ezzi hai venduto?");
+		System.out.println("Quanti pezzi hai venduto?");
 		pezzi = in.nextInt();
 		
 		System.out.println("Quale è il tuo fatturato?");
