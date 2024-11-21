@@ -101,6 +101,31 @@ public class Lezione_04_IF_ELSE {
 		}
 		
 		System.out.println("Menu: \n1) Primo \n2) Secondo"); //Il carattere speciale \n serve ad andare a capo nella console
+
+
+		/*
+		 * Trasformare il voto da numero a lettere
+		 * Tabella di conversione
+		 * 
+		 * se il voto e inferiore a 6 dovrà scrivere Insufficiente
+		 * se il voto è inferiore a 8 dovrà scrivere Sufficiente
+		 * se in voto è inferiore a 9 dovrà scrivere Buono
+		 * altrimenti scrivere Ottimo
+		 */
+		
+		System.out.println("Scrivi il voto da convertire: ");
+		int voto = in.nextInt();
+		
+		if(voto < 6) {
+			System.out.println("Insufficiente");
+		}else if(voto < 8) {
+			System.out.println("Sufficiente");
+		}else if(voto < 9) {
+			System.out.println("Buono");
+		}else {
+			System.out.println("Ottimo");
+		}
+		
 		
 		/*
 		 * 
