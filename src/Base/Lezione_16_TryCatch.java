@@ -8,7 +8,7 @@ public class Lezione_16_TryCatch {
 	public static void main(String[] args) {
 		
 		/*
-		 * Il Try catch serve a gestire gli errore in determinate occasioni
+		 * Il Try catch serve a gestire gli errori in determinate occasioni
 		 */
 		
 		Scanner in = new Scanner(System.in);
