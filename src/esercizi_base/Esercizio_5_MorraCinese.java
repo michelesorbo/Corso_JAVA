@@ -22,11 +22,11 @@ public class Esercizio_5_MorraCinese {
 	  		
 	  		if(giocata.equals("carta") || giocata.equals("sasso") || giocata.equals("forbici")) {
 	  			//Controllo il gioco
-	  			
-	  			if(esito(giocata) == 0) {
+	  			int esitoPartita = esito(giocata);
+	  			if(esitoPartita == 0) {
 	  				System.out.println("Hai pareggiato");
 	  				pareggi++;
-	  			}else if(esito(giocata) == 1) {
+	  			}else if(esitoPartita == 1) {
 	  				System.out.println("hai vinto");
 	  				vittorie++;
 	  			}else {
@@ -83,7 +83,7 @@ public class Esercizio_5_MorraCinese {
 		String[] simboli = {"carta", "sasso","forbici"};
 		
 		computer_giocata = simboli[rm.nextInt(3)];
-		//System.out.println(computer_giocata);
+		System.out.println("Computer: " + computer_giocata);
 		
 		//Vado a testare chi vince
 		if(player_giocata.equals(computer_giocata)) { //Caso di pareggio
