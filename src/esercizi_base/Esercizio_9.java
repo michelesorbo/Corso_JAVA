@@ -53,7 +53,7 @@ public class Esercizio_9 {
 			
 		}while(scelta != 3);
 
-	} //Fine Mail
+	} //Fine Main
 	
 	//Vuole il file dove scrivere e la frase da scrivere
 	public static void scriviFrase(File file, String frase) {
