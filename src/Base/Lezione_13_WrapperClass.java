@@ -110,11 +110,7 @@ public class Lezione_13_WrapperClass {
 		//Cancellare tutti gli elementi dell'array list
 		persone.clear();
 		System.out.println(persone.size());
-		
-		/*
-		 * ES1:
-		 * 		
-		 */
+	
 	}
 
 }
